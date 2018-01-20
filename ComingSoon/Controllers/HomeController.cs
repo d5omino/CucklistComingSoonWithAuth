@@ -1,18 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Diagnostics;
+
 using ComingSoon.Models;
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace ComingSoon.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController:Controller
     {
+
+
+
+
+        public Cucklist CompanyTitle = new Cucklist();
         public IActionResult Index()
         {
+
+
+            ViewData["Title"] = CompanyTitle.CompanyName;
             return View();
+
         }
 
         public IActionResult About()

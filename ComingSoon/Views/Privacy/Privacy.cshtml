@@ -1,0 +1,28 @@
+﻿@model Cucklist
+@{
+
+    Cucklist Title = new Cucklist();
+
+
+}
+
+
+
+
+<h2>@Title.Name() @Title.PrivacyPage</h2>
+
+
+
+
+@Html.Raw(Title.Blurb())
+
+<p>Please direct any questions or concerns to:</p>
+
+<textarea>@Html.Raw(Title.FullAddress())</textarea>
+
+
+
+
+
+
+
