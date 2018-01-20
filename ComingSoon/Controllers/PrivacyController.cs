@@ -4,8 +4,9 @@ namespace ComingSoon.Controllers
 {
     public class PrivacyController:Controller
     {
-        public IActionResult Privacy() => View();
-
-
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }

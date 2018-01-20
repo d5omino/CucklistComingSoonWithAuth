@@ -17,6 +17,17 @@
     </environment>
 </head>
 <body>
+
+    <header>
+        @Html.ActionLink("Privacy",$"Privacy",$"Privacy")
+        @Html.ActionLink("About",$"About",$"Home")
+        @Html.ActionLink("Contact",$"Contact",$"Home")
+
+    </header>
+
+
+
+
     @RenderBody()
     <footer>
         <p>&copy; 2018 @ViewData["Title"] - Coming Soon</p>
