@@ -1,13 +1,19 @@
 ﻿@model Cucklist
 @{
     Cucklist Title = new Cucklist();
+    Title.FullAddress();
 }
 <h2>@Title.Name() @Title.PrivacyPage</h2>
 @Html.Raw(Title.Blurb())
 
 <p>Please direct any questions or concerns to:</p>
 
-<textarea>@Html.Raw(Title.FullAddress())</textarea>
+<text>
+    @Html.Raw(Title.CompanyName)<br />
+    @Html.Raw(Title.careof)<br />
+    @Html.Raw(Title.CompanyStreetAddress)<br />
+    @Html.Raw(Title.CompanyCity) @Html.Raw(Title.CompanyState) @Html.Raw(Title.ZipCode)
+</text>
 
 
 
